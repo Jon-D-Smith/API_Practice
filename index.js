@@ -31,6 +31,12 @@ app.post('/characters', async (req, res) => {
     res.send(character)
 })
 
+app.put('/characters/:id', async (req, res) => {
+    const { id } = req.params;
+    const character = await Character.findByIdAndUpdate(id, req.body);
+    res.redirect(`/characters/${id}`)
+})
+
 app.delete('/characters/:id', async (req, res) => {
     const { id } = req.params;
     const character = await Character.findByIdAndDelete(id);
