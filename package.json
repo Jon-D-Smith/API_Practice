@@ -1,0 +1,25 @@
+{
+  "name": "API_Practice",
+  "version": "1.0.0",
+  "description": "First attempt at a basic API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jon-D-Smith/API_Practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jon-D-Smith/API_Practice/issues"
+  },
+  "homepage": "https://github.com/Jon-D-Smith/API_Practice#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.5"
+  }
+}
