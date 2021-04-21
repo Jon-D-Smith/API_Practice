@@ -32,6 +32,13 @@ app.post('/characters', async (req, res) => {
 })
 
 
+
+app.get('/characters/:id', async (req, res) => {
+    const { id } = req.params;
+    const character = await Character.findById(id)
+    res.send(character)
+})
+
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`)
 })
